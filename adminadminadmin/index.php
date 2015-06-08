@@ -16,16 +16,22 @@
     <center>
 		<br><h1>LOG IN BY ADMIN</h1><br><br>
     </center>
-		<form role="form" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+		<form method="post" role="form" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 			<div class="form-group">
 				<label for="username">Username:</label>
-				<input type="text" class="form-control" placeholder="Username">
+				<input name="username" type="text" class="form-control" placeholder="Username">
 			</div>
 			<div class="form-group">
 				<label for="password">Password:</label>
-				<input type="password" class="form-control" placeholder="Password">
+				<input name="password" type="password" class="form-control" placeholder="Password">
 			</div>
-			<button type="submit" class="btn btn-primary">Regist</button>
+			<input class="btn btn-primary" type="submit" name="login" value="Login">
 		</form>
   </body>
 </html>
+
+<?php
+include("../config/db.php");
+require_once("../class/Login.php");
+$login = new Login();
+?>
