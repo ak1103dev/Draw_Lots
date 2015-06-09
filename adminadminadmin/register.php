@@ -14,20 +14,16 @@
   </head>
   <body>
     <center>
-		<br><h1>Register</h1><br><br>
+		<br><h1>Register CPE27</h1><br><br>
     </center>
-		<form method="post" role="form" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+		<form method="post" enctype="multipart/form-data" role="form" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 			<div class="form-group">
 				<label for="name">ID:</label>
-				<input name="id" type="text" class="form-control" placeholder="Ex. 1111">
+				<input name="id" type="text" class="form-control" placeholder="Ex. 1111 มาจาก 4 ตัวท้ายของเลขประจำตัว">
 			</div>
 			<div class="form-group">
 				<label for="name">Name:</label>
 				<input name="name" type="text" class="form-control" placeholder="Ex. หนึ่ง">
-			</div>
-			<div class="form-group">
-				<label for="facebook">Facebook:</label>
-				<input name="facebook" type="text" class="form-control" placeholder="Ex. Padungkiet Tamasee">
 			</div>
 			<div class="form-group">
 				<label for="image">Image:</label>

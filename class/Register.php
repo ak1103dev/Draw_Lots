@@ -17,12 +17,11 @@ class Register
 				if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						try {
 								$db_conn = new PDO('mysql:host=' . $host . ';dbname=' . $name . ';charset=utf8;port=' . $port, $user, $pass);
-								$sql = 'INSERT INTO CPE27 VALUES(:id, :name, :fb)'; 
+								$sql = 'INSERT INTO CPE27 VALUES(:id, :name)'; 
 								$stmt = $db_conn->prepare($sql);
 								$stmt->execute(array(
 										':id' => $_POST['id'] ,
-										':name' => $_POST['name'],
-										':fb' => $_POST['facebook'])
+										':name' => $_POST['name'])
 								);
 						} catch (PDOException $error) {
 								echo 'error: '. $error->getMessage();
